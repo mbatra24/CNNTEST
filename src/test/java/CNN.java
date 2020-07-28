@@ -25,9 +25,10 @@ public class CNN {
 
         driver.get("https://www.cnn.com");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.xpath("/html/body/div[5]/div/div/header/div/div[1]/div/div[2]/nav/ul/li[5]/a")).click();
         System.out.println(driver.getTitle());
+        System.out.println(driver.getCurrentUrl());
 
     }
 
