@@ -29,6 +29,7 @@ public class CNN {
         driver.findElement(By.xpath("/html/body/div[5]/div/div/header/div/div[1]/div/div[2]/nav/ul/li[5]/a")).click();
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
+        System.out.println("test for new develop branch");
 
     }
 
